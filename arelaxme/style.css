@@ -1,0 +1,428 @@
+/*
+Theme Name: aRelaxMe
+Description: aRelaxMe Theme
+*/
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap");
+:root {
+  --color-text: #2c3530;
+  --color-text-link: #4f966b;
+  --color-text-light: #bebebe;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* ====================
+    Mobile First
+    Table of contents
+    - Global (body, headings, .container, a, p, button)
+    - Frame (highest wrap #frame style)
+    - Header
+    - Content
+    - Footer
+  ==================== */
+/* ==========================================================================
+   Global
+  ========================================================================== */
+body {
+  background: #f0ece6;
+  color: var(--color-text);
+  font-family: "Palanquin", sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  padding-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1.4rem;
+}
+
+/* buttons */
+.elementor-button-text {
+  padding: 13px 20px;
+}
+
+.elementor-button-icon {
+  padding: 3px;
+}
+.elementor-button-icon svg {
+  height: 100%;
+  width: auto;
+}
+
+div.wpforms-container-full .wpforms-form button[type=submit] {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+  background-color: #fff;
+  border: none;
+  color: #4f966b;
+}
+
+/* ==========================================================================
+   Frame
+  ========================================================================== */
+#frame {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+}
+#frame .home-image {
+  display: none;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  #frame .home-image {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+/* ==========================================================================
+   Header
+  ========================================================================== */
+header {
+  transition: all 2s ease;
+}
+header:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+header .container {
+  max-width: 1400px;
+  padding: 10px 2%;
+}
+@media (min-width: 48rem) {
+  header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* logo
+  ------------------------------- */
+header .logo {
+  padding: 22px;
+  position: relative;
+}
+header .logo:hover .logo--flower-petal {
+  opacity: 0.5;
+}
+header .logo a {
+  display: block;
+}
+header .logo .logo--flower-petal {
+  -webkit-animation: ani-logo 1s;
+          animation: ani-logo 1s;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+@-webkit-keyframes ani-logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ani-logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* nav
+  ------------------------------- */
+header .header-nav ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  header .header-nav ul {
+    display: flex !important;
+  }
+}
+header .header-nav ul li {
+  position: relative;
+}
+header .header-nav ul li a {
+  display: inline-block;
+  margin: 0 4rem;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 48rem) {
+  header .header-nav ul li a {
+    margin-right: 0;
+  }
+}
+header .header-nav ul li a::after {
+  background: rgba(201, 216, 207, 0.5);
+  content: " ";
+  display: block;
+  height: 6px;
+  left: 0;
+  top: 50%;
+  position: absolute;
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+  width: 100%;
+  z-index: -1;
+}
+header .header-nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+header .header-nav ul li.current-menu-item a::after {
+  transform: scaleX(1);
+}
+header .header-nav .header-nav--toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 26px;
+  padding: 0;
+  position: absolute;
+  right: 2%;
+  top: 30px;
+  width: 26px;
+}
+@media (min-width: 48rem) {
+  header .header-nav .header-nav--toggle {
+    display: none;
+  }
+}
+header .header-nav .header-nav--toggle span {
+  background: var(--color-text);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+header .header-nav .header-nav--toggle span::before {
+  background: var(--color-text);
+  content: " ";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: -8px;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+header .header-nav .header-nav--toggle span::after {
+  background: var(--color-text);
+  content: " ";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 8px;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+header .header-nav .header-nav--toggle.opened span {
+  background: transparent;
+}
+header .header-nav .header-nav--toggle.opened span::before {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+header .header-nav .header-nav--toggle.opened span::after {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+/* ==========================================================================
+   Content
+  ========================================================================== */
+main {
+  background: #fff;
+  min-height: 70vh;
+  /* prevent margin collapsing */
+}
+main::after {
+  clear: both;
+  content: " ";
+  display: flow-root;
+}
+main .main-image {
+  max-height: 250px;
+  overflow: hidden;
+}
+main .container {
+  max-width: 1400px;
+}
+
+/* Home */
+/* make home background transparent for bg image */
+body.home .main-image img {
+  position: relative;
+}
+@media (min-width: 48rem) {
+  body.home main {
+    background: transparent;
+  }
+  body.home .main-image {
+    display: none;
+  }
+}
+
+/* About Us */
+#aboutus-btn1,
+#aboutus-btn2 {
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  #aboutus-btn-column .elementor-container {
+    flex-direction: column;
+  }
+  #aboutus-btn-column1,
+#aboutus-btn-column2 {
+    width: 100%;
+  }
+}
+/* ==========================================================================
+   Footer
+  ========================================================================== */
+footer {
+  background: #fff;
+  border-bottom: 5px solid #c9d8cf;
+  font-size: 0.875rem;
+}
+
+footer .container {
+  max-width: 1400px;
+  padding: 40px 2%;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  footer .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    text-align: initial;
+  }
+}
+
+/* copyright
+  ------------------------------- */
+.copyright {
+  padding: 20px 0;
+}
+
+/* nav
+  ------------------------------- */
+footer .footer-nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  footer .footer-nav ul {
+    display: flex !important;
+  }
+}
+footer .footer-nav ul li {
+  padding: 0.8rem 0;
+  position: relative;
+}
+footer .footer-nav ul li a {
+  color: var(--color-text);
+  display: inline-block;
+  line-height: 1;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+footer .footer-nav ul li a:hover {
+  color: var(--color-text-link);
+}
+@media (min-width: 48rem) {
+  footer .footer-nav ul li a {
+    border-left: 1px solid var(--color-text-light);
+  }
+}
+@media (min-width: 48rem) {
+  footer .footer-nav ul li:first-of-type a {
+    border: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

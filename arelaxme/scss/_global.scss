@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Global
+  ========================================================================== */
+body {
+  background: #f0ece6;
+  color: var(--color-text);
+  font-family: "Palanquin", sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  padding-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1.4rem;
+}
+
+/* buttons */
+// elementor
+.elementor-button-text {
+  padding: 13px 20px;
+}
+
+.elementor-button-icon {
+  padding: 3px;
+
+  svg {
+    height: 100%;
+    width: auto;
+  }
+}
+
+//wpforms
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
+  background-color: #fff;
+  border: none;
+  color: #4f966b;
+}

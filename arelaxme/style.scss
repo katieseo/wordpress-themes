@@ -1,0 +1,23 @@
+/*
+Theme Name: aRelaxMe
+Description: aRelaxMe Theme
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap");
+@import "./scss/variables";
+@import "./scss/reset";
+
+/* ====================
+    Mobile First
+    Table of contents
+    - Global (body, headings, .container, a, p, button)
+    - Frame (highest wrap #frame style)
+    - Header
+    - Content
+    - Footer
+  ==================== */
+@import "./scss/global";
+@import "./scss/frame";
+@import "./scss/header";
+@import "./scss/content";
+@import "./scss/footer";

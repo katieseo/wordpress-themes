@@ -1,0 +1,132 @@
+/*----------------------------------------
+	citrusnaillounge.com
+----------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|PT+Sans);
+
+/* --- Reset --- */
+html, body, p, figure, fieldset, form, h1, h2, h3, h4, h5, h6, legend, button, input, select, textarea, ul, dl, dd { border:0; font-size:100%; margin:0; padding:0; vertical-align:baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display:block; } /* HTML5 Display */
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+textarea { overflow:auto; vertical-align:top; resize:vertical; }
+label { cursor:pointer; }
+ol, ul {list-style: none;}
+table { border-collapse:collapse; border-spacing:0; }
+caption, th, td { text-align:left; font-weight:normal; }
+table, th, td  { vertical-align:middle; }
+q { quotes:none; }
+img { border:0; vertical-align:middle; }
+
+/*--- Width ---*/
+#frame { width:980px; margin:60px auto; }
+
+/*--- Background ---*/
+body  { background:#fff url(../images/citrus-nail-bg.jpg) repeat-x top center; }
+
+/*--- Typography & Color ---*/
+html { font-size:100.01%; }
+body { font-size:80%; color:#555; line-height:1.6; }
+body, input, textarea   { font-family:Arial, Helvetica, sans-serif; }
+	h1, h2, #nav, .dropcap, .callinfo  { font-family:'Droid Serif' }
+	#footer { font-family:'PT Sans' }
+h1 { color:#562419; font-size:27px; font-weight:normal; line-height:1.2; margin-bottom:1em; text-transform:uppercase; }
+h2 { color:#222; font-size:14px; line-height:1.2; margin-bottom:0.5em; }
+	.features h2 { text-transform:uppercase; }
+	.specials h2 { color:#e71546; font-size:18px; }
+	#footer h2 { color:#333300; font-size:12px; }
+p { margin:0 0 1.5em; }
+	p.subimg { margin-bottom:2.5em; }
+
+a { color:#555; text-decoration:none; }
+a:visited { color:#555; }
+a:hover, a:active  { color:#55622c; }
+#nav a:hover { color:#55622c; }
+
+/*--- Global ---*/
+.dropcap { font-size:18px; }
+.list-style { list-style:none; margin-bottom:15px; }
+	.list-style li { background:url(../images/citrus-nail-icon-list.png) no-repeat left 5px; padding:0 0 5px 20px; }
+
+/*--- input ---*/
+input[type="text"], textarea { border:1px solid #ccc; font-size:13px; padding:1%; width:98%; }
+textarea  { height:150px; }
+input[type="button"] { background:#DEEE12; padding:3px; font-size:12px; padding:3px 15px; }
+
+/*--- Column ---*/
+.column-wrap { margin-bottom:15px; }
+.column50-left { float:left; width:48.5%; }
+.column50-right { float:right; width:48.5%; }
+/* clear */
+.container:after, .column-wrap:after, .content-wrapper:after { content:""; clear:both; display:block; height:0; }
+.container, .column-wrap, .content-wrapper { zoom:1; }
+
+/*--- Layout ---*/
+#frame { background:#fff; box-shadow: 0 0 0.5em rgba(0, 0, 0, .1); }
+	.container { margin:0 auto; position:relative; }
+
+#header { background:url(../images/citrus-nail-bg-header.jpg) no-repeat top center;}
+	#header .container { background:url(../images/citrus-nail-bg-nav.jpg) no-repeat bottom center; height:40px; }
+	.branding { position:absolute; left:18px; top:-22px; z-index:100; }
+	.nav-user { font-size:11px; position:absolute; right:20px; top:-35px; }
+		.nav-user li { float:left; margin-left:10px; }
+#nav { position:absolute; bottom:0; right:10px; }
+	#nav li { float:left; }
+	#nav a { color:#562419; display:block; padding:9px 14px; }
+				
+#content { background:url(../images/citrus-nail-bg-content.jpg) repeat-x top center; margin-top:0; }
+	.content-wrapper { }
+	#content-main { background:url(../images/citrus-nail-content-lineart.png) no-repeat bottom right; min-height:300px; padding:60px 70px 0 80px; }
+		.content-box { padding:0 0 100px 0; }
+
+#footer { color:#555; font-size:12px; line-height:1.4; }
+	#footer .container { background:#c7e329 url(../images/citrus-nail-bg-footer.jpg) repeat-x top center; }
+	#footer  p { margin-bottom:10px; }
+	.footer-info { padding:20px; overflow:hidden; }
+		.footer-info div { float:left; width:300px; margin-right:20px; }
+		.footer-info div.last { margin-right:0; }
+		.footer-info div.footer-menu { width:35%; }
+	.copyright { background:#b4ce2f; padding:12px 0; text-align:center; }
+	
+/*--- Pages ---*/
+
+/*home*/
+.slideshow { height:318px; overflow:hidden; }
+
+.features { overflow:hidden; padding:30px 20px; }
+.features div { float:left; margin-right:20px; position:relative; width:300px }
+	.features div.last { margin-right:0 }
+.features span { color:#fff; width:278px; padding:0; position:absolute; bottom:0; height:0; left:1px; line-height:1.2; background: #000;  background:rgba(0, 0, 0, 0.7); }
+.features div:hover span { height:40px; padding:5px 10px 0; }
+
+/*services*/
+.services dl { background:#F7F7F7; padding:20px; margin-bottom:2em; overflow:hidden; }
+.services dt { float:left; width:80%; }
+.services dd { float:left; width:20%; text-align:right; }
+
+/*contact-us*/
+.contact-us dl { background:#F7F7F7; padding:20px; margin-bottom:2em; overflow:hidden; }
+.contact-us dt { float:left; width:30%; margin-bottom:5px; }
+.contact-us dd { float:left; width:70%; margin-bottom:5px; }
+
+/*callinfo*/
+.callinfo { background:#F7F7F7; display:inline-block; font-size:14px; padding:1em; margin-top:1em; }
+.callinfo .phonenumber { color:#ED2152; font-size:18px; }
+.callinfo a { color:#ED2152; }
+
+/*gallery*/
+ul.gallery { overflow:hidden; }
+ul.gallery li { float:left; margin:0 1em 1em 0; }
+ul.gallery li img { border:5px solid #F7F7F7; width:110px; height:110px; }
+ul.gallery li img:hover { border-color:#DBE136; }
+
+/*special*/
+.specials-left { float:left; width:63%; }
+.specials-left img { width:48%; }
+.specials-right { float:right; width:35%; }
+.specials-left  img { margin:0 5px 5px 0; }
+
+.specials-list { background:#F7F7F7; padding:1em; margin-bottom:1em; overflow:hidden; }
+	.specials-list img { float:left; width:90px; margin:0 1.5em 1em 0 }
+.specials dl { background:#F7F7F7; padding:20px; margin-bottom:1em; overflow:hidden; }
+.specials dt { float:left; width:45%; padding:5px 0; }
+	.specials dt img { width:80%; }
+.specials dd { float:left; font-size:12px; width:55%; padding:5px 0; }

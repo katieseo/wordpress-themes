@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Content
+  ========================================================================== */
+
+main {
+  background: #fff;
+  min-height: 70vh;
+
+  /* prevent margin collapsing */
+  &::after {
+    clear: both;
+    content: " ";
+    display: flow-root;
+  }
+
+  .main-image {
+    max-height: 250px;
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Home */
+/* make home background transparent for bg image */
+body.home {
+  .main-image img {
+    position: relative;
+  }
+
+  @media (min-width: 48rem) {
+    main {
+      background: transparent;
+    }
+
+    .main-image {
+      display: none;
+    }
+  }
+}
+
+/* About Us */
+
+#aboutus-btn1,
+#aboutus-btn2 {
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  #aboutus-btn-column .elementor-container {
+    flex-direction: column;
+  }
+
+  #aboutus-btn-column1,
+  #aboutus-btn-column2 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Frame
+  ========================================================================== */
+
+#frame {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+
+  .home-image {
+    display: none;
+    width: 100%;
+
+    @media (min-width: 48rem) {
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}

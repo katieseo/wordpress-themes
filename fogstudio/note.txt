@@ -1,0 +1,20 @@
+Install plugins and activate.
+    * Attachments (portfolio)
+    * wp-pagenavi (pagination)
+    * Moderizr (portfolio)
+
+Settings
+*Create page: home, services, portfolio, about, contact
+    1. Settings > Permalinks > Select Post name > Save Changes
+    2. appearances > menu > set the menu name: main
+    3. settings > Reading > Front page displays (A static page)
+    4. services > parent set services, order 11~15
+    5. set thumbnail size (400,247 / 800,494 / 1600,988)
+
+Create pages (set templates: its own page template)
+
+Portfolio
+   * Editor: details
+   * Excerpt: summary on the list
+   * Portfolio Images: attach files ( same height images / width: larger than 630px )
+   * Featured Image: featured image on the list

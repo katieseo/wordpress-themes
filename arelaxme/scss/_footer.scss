@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Footer
+  ========================================================================== */
+
+footer {
+  background: #fff;
+  border-bottom: 5px solid #c9d8cf;
+  font-size: 0.875rem;
+}
+
+footer .container {
+  max-width: 1400px;
+  padding: 40px 2%;
+  text-align: center;
+
+  @media (min-width: 48rem) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    text-align: initial;
+  }
+}
+
+/* copyright
+  ------------------------------- */
+
+.copyright {
+  padding: 20px 0;
+}
+
+/* nav
+  ------------------------------- */
+
+footer .footer-nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    @media (min-width: 48rem) {
+      display: flex !important;
+    }
+
+    li {
+      padding: 0.8rem 0;
+      position: relative;
+
+      a {
+        color: var(--color-text);
+        display: inline-block;
+        line-height: 1;
+        padding: 0 1rem;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+          color: var(--color-text-link);
+        }
+
+        @media (min-width: 48rem) {
+          border-left: 1px solid var(--color-text-light);
+        }
+      }
+
+      @media (min-width: 48rem) {
+        &:first-of-type {
+          a {
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}
